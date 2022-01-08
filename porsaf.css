@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: black;
+}
+header {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 5px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.50s;
+    background: rgb(43, 46, 44);
+    
+    
+}
+.logo {
+    color: rgb(236, 236, 236);
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span {
+    color: rgb(24, 228, 184);
+}
+.navbar{
+    display: flex;
+    position: relative;
+    
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: rgb(231, 230, 230);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+header .navbar li a:hover {
+    color: rgb(25, 216, 184);
+    border-bottom: 2px solid rgb(37, 212, 168);
+}
+/* ------------page d'accueil----------------- */
+.accueil{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(header.png);
+    background-size: cover;
+    background-position: center;
+}
+.accueil .contenu {
+    max-width: 100%;
+    text-align: center;
+}
+.accueil .contenu h2 {
+    font-size: 1.9em;
+    text-transform: capitalize;
+    color: white;
+}
+.bnt1{
+    font-size: 1em;
+    color: white;
+    background: rgb(22, 166, 192);
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.bnt2{
+    font-size: 1em;
+    color: white;
+    background: rgba(71, 56, 28, 0.89);
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.bnt1:hover{
+    letter-spacing: 4px;
+}
+.bnt2:hover{
+    letter-spacing: 4px;
+}
+
+/* --------------page a propos ------------------------ */
+section{
+    padding: 100px ;
+}
+.tous {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tous .par {
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+.tous .par h2{
+    margin-bottom: 60px;
+}
+.titr{
+    color: black;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+.titr span{
+    color: rgb(49, 231, 201);
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.tous .par img {
+    height: 400px;
+    width: 500px;
+    position: relative;
+}
+/* -------------menu de restau---------------- */
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    font-weight: 300px;
+}
+.titre span{
+    color: rgb(44, 236, 204);
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+.menu {
+    margin-top: -100px;
+}
+.menu .contenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .contenu .box{
+    width: 270px;
+    margin: 7px;
+    border: 20px solid white;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, 0.8);
+
+}
+.menu .contenu .box .inbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.menu .contenu .box .inbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.menu .contenu .box .tex{
+    text-align: center;
+    font-weight: 300px;
+    color: black;
+
+}
+.menu .contenu .box .tex h3{
+    font-weight: 400;
+}
+
+/* ---------------------contact-------------- */
+.contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(./PORSAF/contact2.jpg);
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+}
+.contactform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+}
+.contactform .input1{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.contactform .input1 input,
+.contactform .input1 textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 15px;
+    font-weight: 300;
+    resize: none;
+}
+.contactform .input1 input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    background: rgb(202, 135, 9);
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+/* --------------- LOCAL------------- */
+.footer {
+    background: rgb(27, 27, 27);
+    text-align: center;
+}
+.footer .shar {
+    padding: 1rem 0;
+}
+.footer .shar a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: white;
+    border: var(--border);
+    margin: 3rem;
+    border-radius: 50%;
+}
+.footer .shar a:hover{
+    background-color: var(--main-color);
+}
+.footer .local {
+    justify-content: center;
+    padding: 5px 20px;
+}
+.footer .local p{
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    
+}
+
+/* -------------------pour la barre qui transfir la coleur ------------------------- */
+header .sticky {
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+header .sticky .logo{
+    color: #000;
+}
+header .sticky .navbar li a {
+    color: #000;
+}
+header .sticky li a :hover{
+    color: rgb(25, 216, 184);
+    border-bottom: 2px solid rgb(37, 212, 168);
+}
